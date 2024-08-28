@@ -1,0 +1,21 @@
+Views
+------
+
+//cameraViewMulti.php
+
+http://localhost/helpers/insyncInterface_v2.php?action=getImage&viewCamera=South%20Bound&filter=normal&quality=75&width=320&height=240&time=1724836242103
+http://localhost/helpers/insyncInterface_v2.php?action=getStatus
+http://localhost/helpers/insyncInterface_v2.php?action=getProcessorStatus
+
+//cameraViewSingle.php
+
+http://localhost/helpers/cameraioInterface_v2.php //post method for buttons
+http://localhost/helpers/insyncInterface_v2.php?action=getCameraStatus&deviceName=North%20Bound // for status
+
+
+WARNING: Recording video takes up a lot of disk space, and no checks are made to prevent filling up the drive. Use with caution, and do not record more than 5 minutes of video at a time.
+
+
+//recording.php
+
+http://localhost/helpers/recordingHelper_v2.php?action=getdrivelist
