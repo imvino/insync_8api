@@ -1,0 +1,151 @@
+/*  ==========================================================================
+    Portal Designer
+    ==========================================================================  */
+    .portal-title { width: 275px; }
+
+    .designer-wrapper { margin-top: 25px; }
+    .designer-wrapper label { display: inline-block; vertical-align: middle; margin: 0 6px 0 0; font-size: 13px; text-align: right; text-transform: uppercase; cursor: default; }
+    .lt-ie8 .designer-wrapper label { display: inline; zoom: 1; }
+    .designer-wrapper .label-name { width: 105px; }
+    .designer-wrapper .label-ipurl { width: 80px; }
+
+    .toolbar { position: relative; z-index: 50; padding: 10px; background: #232323; }
+    .toolbar-btns { margin: 0; list-style: none; }
+    .toolbar-btns > li { position: relative; display: inline-block; margin: 0 0 0 8px; }
+    .lt-ie8 .toolbar-btns > li { display: inline; zoom: 1; }
+    .toolbar-btns li.first { margin: 0; z-index: 40; }
+    .lt-ie8 .toolbar-btns li.first .btn { padding: 13px 13px 12px; }
+    .toolbar-btns li.clear { float: right; }
+    .toolbar-btns li.clear .btn { padding: 8px 13px; margin: 0; }
+    .toolbar-btns li.clear .btn-outline { border-color: #777; color: #777; font-weight: 600; }
+    .toolbar-btns li.clear .btn-outline:hover, .toolbar-btns li.clear .btn-outline:focus { background: #777; color: #232323; }
+    .toolbar-btns .btn { padding: 11px 13px 10px; margin: 0; }
+    .toolbar-btns .btn:active, .toolbar-btns .btn.active { top: 0; }
+    .toolbar-btns .arrow { display: inline-block; height: 8px; width: 14px; margin-left: 10px; background: url("../img/chosen/chosen-sprite.png") no-repeat; }
+    .lt-ie8 .toolbar-btns .arrow { display: inline; zoom: 1; vertical-align: 4px; }
+
+    .icon { display: inline-block; vertical-align: middle; height: 18px; width: 18px; margin-right: 10px; }
+    .lt-ie8 .icon { display: inline; zoom: 1; }
+    .btn-add .icon { background-position: -20px -450px; }
+    .btn-save .icon { background-position: 0 -450px; }
+    .btn-download .icon { background-position: 0 -350px; }
+    .btn-generate .icon { background-position: -20px -470px; }
+    .btn-file .icon { background-position: 0 -470px; }
+
+    .toolbar-submenu { position: absolute; z-index: 60; display: none; background: #232323; }
+    .toolbar-submenu.active { display: block; }
+    .toolbar-submenu ul { padding: 0; margin: 0; list-style: none; z-index: 60; }
+    .toolbar-submenu li { border-top: 1px solid #373737; }
+    .toolbar-submenu li:hover { background: #373737; }
+    .toolbar-submenu li:first-child { border-top: 0 none; }
+    .toolbar-submenu li a { display: block; padding: 10px 35px 10px 15px; color: #fff; font-weight: 600; text-transform: uppercase; }
+    .toolbar-submenu li a:hover { color: #7c9e4c; }
+
+    .portal-designer { position: relative; z-index: 49; padding: 0 15px 15px 15px; border-color: #232323; border-style: solid; border-width: 0 1px 1px 1px; margin: 0; }
+
+    .portal-corridor { padding-bottom: 10px; border-bottom: 1px solid #ccc; margin-top: 15px; list-style: none; }
+    .portal-header { position: relative; padding: 10px 10px 10px 45px; margin-bottom: 15px; background: #232323; color: #fff; cursor: pointer; }
+    .portal-header input { margin: 0 15px 0 0; }
+    .portal-header .btn { padding: 11px 13px 10px; margin: 0 8px 0 0; }
+    .portal-header .btn:active, .portal-header .btn.active { top: 0; }
+    .corridor-delete, .intersection-delete { position: absolute; top: 21px; left: 15px; color: #fff; font-size: 29px; font-weight: 700; }
+    .corridor-delete:hover, .intersection-delete:hover { color: #fff; }
+
+    .portal-corridor-container { list-style: none; }
+    .portal-corridor-container li { margin-top: 15px; }
+
+    .portal-intersection-container { margin-bottom: 15px; list-style: none; }
+    .portal-intersection-container li { position: relative; padding: 5px 0 5px 40px; }
+    .portal-intersection-container li:hover { background: #f0f0f0; }
+    .portal-intersection-container li .delete { position: absolute; top: 14px; left: 10px; color: #333; font-size: 30px; font-weight: 700; cursor: pointer; }
+    .portal-intersection-container li input { margin: 0 15px 0 0; }
+
+    .portal-map { position: relative; padding: 10px 10px 10px 45px; background: #232323; color: #fff; list-style: none; }
+    .portal-map .delete { position: absolute; top: 21px; left: 10px; color: #fff; font-size: 30px; font-weight: 700; cursor: pointer; }
+    .portal-map input { margin: 0 15px 0 0; }
+
+    .labelled-input { white-space: nowrap; display: inline-block; }
+    .lt-ie8 .labelled-input { display: inline; zoom: 1; }
+
+    /* CSS3 */
+    .toolbar .toolbar-submenu, .portal-header, .portal-corridor, .portal-corridor-container, .portal-map, .portal-intersection-container li {
+    -webkit-border-radius: 3px;
+            border-radius: 3px; 
+    }
+    .toolbar, .toolbar-submenu li:first-child, .toolbar-submenu li:first-child:hover {
+    -webkit-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0; 
+    }
+    .portal-designer {
+    -webkit-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px; 
+    }
+    .toolbar-submenu li a {
+    -webkit-transition: all linear 0.3s;
+       -moz-transition: all linear 0.3s;
+         -o-transition: all linear 0.3s;
+            transition: all linear 0.3s;
+    }
+
+/*  ==========================================================================
+    Media Queries
+    ==========================================================================  */
+
+    /* Mobile (Portrait & Landscape) ----------- */
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    }
+
+    /* Tablet (Portrait & Landscape) ----------- */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+
+    @media only screen and (min-width: 0px) {
+        .toolbar-submenu { font-size: 10px; }
+        .toolbar-btns .btn { padding: 5px 1px 4px; font-size: 10px; }
+        .lt-ie8 .toolbar-btns li.first .btn { padding: 6px 1px 5px; }
+        .toolbar-btns li.clear .btn { padding: 3px 2px 2px; font-size: 10px; }
+        .toolbar-btns .btn .icon { margin: 0 1px 0 0; }
+        .toolbar-btns li.clear .btn .icon { margin: 0 1px 0 0; }
+        .toolbar-btns > li { margin: 0 0 0px 2px; }
+        .portal-header .btn { padding: 5px 1px 4px; font-size: 10px; }
+        .portal-header .btn .icon { margin: 0 1px 0 0; }
+        .portal-header input { margin: 0 3px 0 0; }
+        .labelled-input { white-space: normal; }
+	input[type="text"], input[type="password"], textarea { padding: 3px 2px 3px; }
+        .portal-header .right { float: none; }
+    }
+
+    @media only screen and (min-width: 720px) {
+        .portal-header .right { float: right; }
+    }
+
+    @media only screen and (min-width: 1120px) {
+        .toolbar-submenu { font-size: 11px; }
+        .toolbar-btns .btn { padding: 8px 4px 7px; font-size: 11px; }
+        .lt-ie8 .toolbar-btns li.first .btn { padding: 9px 4px 9px; }
+        .toolbar-btns li.clear .btn { padding: 5px 4px 4px; font-size: 11px; }
+        .toolbar-btns .btn .icon { margin: 0 3px 0 0; }
+        .toolbar-btns li.clear .btn .icon { margin: 0 3px 0 0; }
+        .toolbar-btns > li { margin: 0 0 0px 6px; }
+        .portal-header .btn { padding: 8px 4px 7px; font-size: 11px; }
+        .portal-header .btn .icon { margin: 0 3px 0 0; }
+        .portal-header input { margin: 0 6px 0 0; }
+        .labelled-input { white-space: nowrap; }
+	input[type="text"], input[type="password"], textarea { padding: 6px 5px 6px; }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        .toolbar-submenu { font-size: 12px; }
+        .toolbar-btns .btn { padding: 9px 5px 8px; font-size: 12px; }
+        .lt-ie8 .toolbar-btns li.first .btn { padding: 11px 5px 10px; }
+        .toolbar-btns li.clear .btn { padding: 7px 5px 6px; font-size: 12px; }
+        .toolbar-btns .btn .icon { margin: 0 5px 0 0; }
+        .toolbar-btns li.clear .btn .icon { margin: 0 5px 0 0; }
+        .toolbar-btns > li { margin: 0 0 0px 7px; }
+        .portal-header .btn { padding: 9px 5px 8px; font-size: 12px; }
+        .portal-header .btn .icon { margin: 0 5px 0 0; }
+        .portal-header input { margin: 0 8px 0 0; }
+        .labelled-input { white-space: nowrap; }
+	input[type="text"], input[type="password"], textarea { padding: 7px 6px 7px; }
+    }

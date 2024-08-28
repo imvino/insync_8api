@@ -1,0 +1,112 @@
+#menuButtons {
+    width: 15%;
+    float: right;
+}
+
+#corridorContainer {
+    margin-top: 0px;
+    white-space: nowrap;
+}
+.lt-ie8 #corridorContainer {
+    white-space: normal;
+}
+
+.camera {
+    background-image: url('/img/no-camera-160.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+li.camera {
+    line-height: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.lt-ie8 li.camera {
+    line-height: 1px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.gap {
+    text-align: center;
+}
+
+.camera-container {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row-header {
+    vertical-align: middle;
+    padding: 5px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    background-color: #DDDDDD;
+    color: black;
+    border-bottom: solid 1px #AAAAAA;
+    cursor: pointer;
+}
+
+.corridor-intersection, .corridor-col {
+    display: inline-block;
+}
+.lt-ie8 .corridor-intersection, .corridor-col {
+    float: left;
+}
+
+
+.intersection-header {
+    vertical-align: middle;
+    padding: 5px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    background-color: #DDDDDD;
+    color: black;
+    border-bottom: solid 1px #AAAAAA;
+    cursor: pointer;
+}
+
+.intersection-name {
+    width: 200px;
+    margin-right: 20px;
+}
+
+button.pd-button { 
+    color: black; 
+    background: #DDDDDD;
+    border: 0 none; 
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    margin-top: -12px;
+    margin-left: 5px;
+} 
+
+button.pd-button:hover { color: grey; }
+
+button.pd-delete-button-map { 
+    color: black; 
+    background: #E8E8E8;
+    border: 0 none; 
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    margin-top: -7px;
+    margin-left: 5px;
+} 
+
+button.pd-delete-button-map:hover { color: grey; }
+
+#collapsedControls { position: absolute; right: 12px; top: -5px; }
+
+.lt-ie8 #corridorTitle { overflow: visible; padding-bottom: 10px; }

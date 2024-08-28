@@ -1,0 +1,10 @@
+/*  ==========================================================================
+    GPS Coordinates
+    ==========================================================================  */
+    #viewport { overflow: hidden; height: 460px; width: 640px; border: 1px solid #ddd;} /* keeps map contents from spilling over if JS is disabled */
+
+    /* CSS3 */
+    #viewport {
+        -webkit-border-radius: 3px;
+        border-radius: 3px; 
+    }

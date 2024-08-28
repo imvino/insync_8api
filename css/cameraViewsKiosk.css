@@ -1,0 +1,87 @@
+/*	==========================================================================
+	Camera Views
+	==========================================================================  */
+	.camera-container { width: 320px; margin: auto; padding: 0 0 1em 0; }
+
+    /* Multi View */
+
+    .tab-control-overlay { position: relative; z-index: 2; }
+    .lt-ie8 .tab-control-overlay { position: absolute; right: 25px; }
+
+    #camera_scrollbox { position: relative; overflow-x: auto; }
+    #view_container { position: relative; display: inline-block; padding: 0; margin: 0; }
+    .lt-ie8 #view_container { display: inline; zoom: 1; }
+
+	#original_items, #cloned_items { margin: 0; list-style: none; clear: both; }
+    #original_items li, #cloned_items li { padding: 0; margin: 0; line-height: 0; cursor: move; }
+    #original_items li img, #cloned_items li img { padding: 3px; }
+
+    #original_items li { display: inline-block; width: auto; }
+    .lt-ie8	#original_items li { display: inline; zoom: 1; }
+    #cloned_items li { position: absolute; }
+
+    .layout-control { text-align: center; }
+
+    .columns.vertical-center { vertical-align: middle; }
+    .nowrap { white-space: nowrap; }
+
+	body.embedded { margin-bottom: 0px; }
+
+	
+    /* Right Side Tabs */
+	
+	#tab_body {
+		border: 1px solid #7b9e4a;
+		margin-right: 49px;
+		height: 544px;
+	}
+	
+	
+	.tabDiv {
+		position: fixed;
+		right: 10px;
+		top: 16px;
+		width: 500px;
+	}
+
+	.sideTab {
+		-ms-transform: translateX(475px) rotate(90deg); /* IE 9 */
+		-ms-transform-origin:0% 100%; /* IE 9 */
+		-webkit-transform: translateX(475px) rotate(90deg); /* Safari and Chrome */
+		-webkit-transform-origin:0% 100%; /* Safari and Chrome */	
+		
+		list-style: none;
+	}
+	
+	.sideTab li {
+		float:left;
+		margin: 0 0 0 -1px;
+	}
+	
+	.sideTab a {
+		float:left;
+		display: block;
+		padding: 14px;
+		font-weight: 900;
+		color: #777;
+		font-family: "open-sans", sans-serif;
+		font-size: 18px;
+	}
+	
+	.sideTab a:hover { 
+		background: #fff;
+		color: black;
+	}
+	
+	.selectedTab  {
+		background-color: white;
+		border: 1px solid #7b9e4a;
+		border-bottom: 1px solid white;
+	}
+	
+	.backTab {
+		background-color: #eee; 
+		border: 1px solid #7b9e4a;
+	}
+
+	/* CSS3 */

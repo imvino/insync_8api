@@ -1,0 +1,44 @@
+/*  ==========================================================================
+    Account Pages
+    ==========================================================================  */
+    .users-table-options { width: 20px; }
+    .users-table-options a { position: relative; display: block; }
+    .users-table-options a span { position: absolute; top: 0; left: 0; display: block; height: 17px; width: 17px; }
+
+    .users-table-options .edit span { background-position: 0 -229px; }
+    .users-table-options .delete span { background-position: 0 -248px; }
+
+    .users-table-options a:hover .icon-default { opacity: 0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); }
+    .users-table-options a:hover .icon-hover { opacity: 1; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); }
+
+    .add-user-dialog .control-label, .edit-user-dialog .control-label { width: 125px; }
+    .add-user-dialog .controls, .edit-user-dialog .controls { margin-left: 145px; }
+    .add-user-dialog .inline-help, .edit-user-dialog .inline-help { vertical-align: -2px; margin: 0 0 0 3px; }
+    .lt-ie8 .add-user-dialog .inline-help, .lt-ie8 .edit-user-dialog .inline-help { display: inline; zoom: 1; vertical-align: -1px; }
+
+    .add-user-dialog .add-user-options, .edit-user-dialog .edit-user-options { background: none; }
+    .add-user-dialog .add-user-options td, .edit-user-dialog .edit-user-options td { vertical-align: middle; white-space: nowrap; border-top: 0 none; background: none; }
+    .add-user-dialog .add-user-options label, .edit-user-dialog .edit-user-options label { margin: 0; font-size: 13px; cursor: default; }
+    .add-user-dialog .add-user-options .prettycheckbox, .add-user-dialog .add-user-options .prettyradio, .edit-user-dialog .edit-user-options .prettycheckbox, .edit-user-dialog .edit-user-options .prettyradio { display: inline-block; padding: 0; margin: 0; }
+    .lt-ie8 .add-user-dialog .add-user-options .prettycheckbox, .lt-ie8 .add-user-dialog .add-user-options .prettyradio, .lt-ie8 .edit-user-dialog .edit-user-options .prettycheckbox, .lt-ie8 .edit-user-dialog .edit-user-options .prettyradio { float: left; }
+
+    .add-user-dialog .add-user-options .inline-help, .edit-user-dialog .edit-user-options .inline-help { vertical-align: middle; margin: 0; }
+    .lt-ie8 .add-user-dialog .add-user-options .inline-help, .lt-ie8 .edit-user-dialog .edit-user-options .inline-help { float: right; vertical-align: 2px; }
+
+    /* CSS3 */
+    .users-table-options a span {
+        -webkit-transition: opacity 0.3s; 
+        -moz-transition: opacity 0.3s; 
+        -o-transition: opacity 0.3s; 
+        transition: opacity 0.3s;
+    }
+
+/*  ==========================================================================
+    Media Queries
+    ==========================================================================  */
+    
+    @media only screen and (max-width: 1024px) {
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    }

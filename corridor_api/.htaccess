@@ -1,0 +1,12 @@
+AuthType Digest
+AuthName "InSyncAPI"
+AuthDigestProvider dbd
+
+<FilesMatch "\.php$">
+	Require valid-user
+</FilesMatch>
+
+<FilesMatch "^.htaccess$">
+    Require all denied
+</FilesMatch>
+

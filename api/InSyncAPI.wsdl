@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="wsdl-viewer.xsl"?>
+<?php
+require_once dirname(__FILE__) . '/../helpers/constants.php';
+header('Content-Type: application/xml');
+?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.rhythmtraffic.com/insync" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:insync="http://www.rhythmtraffic.com/insync" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://www.rhythmtraffic.com/insync">
+	<types>
+		<xsd:schema targetNamespace="http://www.rhythmtraffic.com/insync" xmlns="http://www.w3.org/2001/XMLSchema">
+			<import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+			<import namespace="http://schemas.xmlsoap.org/wsdl/" />
+		</xsd:schema>
+	</types>
+	<message name="getCameraImageRequest">
+		<part name="camera_name" type="xsd:string" >
+			<documentation>The long name of the camera to return (e.g. "North Bound", "South Bound")</documentation>
+		</part>
+		<part name="filter" element="xsd:integer">
+			<documentation>The type of image to return.  Options inclde "normal", "raw", "edge" and "edge-raw".</documentation>
+		</part>
+		<part name="quality" element="xsd:integer">
+			<documentation>The JPEG quality setting for the created image</documentation>
+		</part>
+		<part name="width" element="xsd:integer">
+			<documentation>The width of the returned image in pixels.  Native resolution is 320 pixels</documentation>
+		</part>
+		<part name="height" element="xsd:integer">
+			<documentation>The height of the returned image in pixels.  Native resolution is 240 pixels</documentation>
+		</part>
+		<part name="mode" element="xsd:string">
+			<documentation>Set whether the image show simplified markup or advanced markup.  Values are "simple" and "advanced"</documentation>
+		</part>
+	</message>
+	<message name="getCameraImageResponse">
+		<part name="return" type="xsd:base64Binary">
+			<documentation>The binary JPEG image data</documentation>
+		</part>
+	</message>
+    <message name="getIntersectionNameRequest"></message>
+	<message name="getIntersectionNameResponse">
+		<part name="return" type="xsd:string" />
+	</message>
+	<message name="getWebUIVersionRequest"></message>
+	<message name="getWebUIVersionResponse">
+		<part name="return" type="xsd:string" />
+	</message>
+	<message name="getLightStateXmlRequest"></message>
+	<message name="getLightStateXmlResponse">
+		<part name="return" type="xsd:string" />
+	</message>
+	<portType name="serverPortType">
+		<operation name="getCameraImage">
+			<documentation>Get a camera image from InSync</documentation>
+			<input message="tns:getCameraImageRequest"/>
+			<output message="tns:getCameraImageResponse"/>
+		</operation>
+		<operation name="getWebUIVersion">
+			<documentation>Get the version of the Web UI</documentation>
+			<input message="tns:getWebUIVersionRequest"/>
+			<output message="tns:getWebUIVersionResponse"/>
+		</operation>
+		<operation name="getLightStateXml">
+			<documentation>Get the intersection light status information</documentation>
+			<input message="tns:getLightStateXmlRequest"/>
+			<output message="tns:getLightStateXmlResponse"/>
+		</operation>
+	</portType>
+	<binding name="serverBinding" type="tns:serverPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="getCameraImage">
+			<soap:operation soapAction="getCameraImage" style="rpc"/>
+			<input>
+				<soap:body use="literal" namespace="http://www.rhythmtraffic.com/insync" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output>
+				<soap:body use="literal" namespace="http://www.rhythmtraffic.com/insync" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+		<operation name="getWebUIVersion">
+			<soap:operation soapAction="getWebUIVersion" style="rpc"/>
+			<input>
+				<soap:body use="literal" namespace="http://www.rhythmtraffic.com/insync" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output>
+				<soap:body use="literal" namespace="http://www.rhythmtraffic.com/insync" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+		<operation name="getLightStateXml">
+			<soap:operation soapAction="getLightStateXml" style="rpc"/>
+			<input>
+				<soap:body use="literal" namespace="http://www.rhythmtraffic.com/insync" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output>
+				<soap:body use="literal" namespace="http://www.rhythmtraffic.com/insync" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="InSyncAPI">
+		<documentation>InSync API</documentation>
+		<port name="serverPort" binding="tns:serverBinding">
+			<soap:address location="<?=SITE_BASE_URL?>api/InSyncAPI.php"/>
+		</port>
+	</service>
+</definitions>

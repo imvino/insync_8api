@@ -1,0 +1,74 @@
+#menuButtons {
+    width: 15%;
+    float: right;
+}
+
+.camera {
+    float: left;
+    border: solid 1px #ccc;
+    margin: 5px;
+    width: 160px;
+    height: 120px;
+    background-image: url('/img/no-camera-160.png');
+    text-align: center;
+    padding: 5px;
+}
+
+.camera-container {
+    width: 100%;
+    height: 100%;
+}
+
+.reip-intersection {
+    border: solid 1px #ccc;
+    margin: 5px;
+    background-color: white;
+}
+
+.intersection-relay, .intersection-camera {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.intersection-header {
+    vertical-align: middle;
+    padding: 5px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    background-color: #DDDDDD;
+    color: black;
+    border-bottom: solid 1px #AAAAAA;
+    cursor: pointer;
+}
+
+.intersection-old, .intersection-new, .intersection-subnet, .intersection-gateway, .camera-old, .camera-new, .relay-old, .relay-new {
+    margin-right: 20px;
+}
+
+button.pd-button { 
+    color: black; 
+    background: #DDDDDD;
+    border: 0 none; 
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    margin-top: -12px;
+    margin-left: 5px;
+} 
+
+button.pd-button:hover { color: grey; }
+
+button.pd-button-delete { 
+    color: black; 
+    background: white;
+    border: 0 none; 
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    margin-top: -6px;
+    margin-left: 5px;
+} 
+
+button.pd-button-delete:hover { color: grey; }

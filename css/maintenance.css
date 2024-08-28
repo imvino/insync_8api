@@ -1,0 +1,15 @@
+/*  ==========================================================================
+    Maintenance Page
+    ==========================================================================  */
+    .cmd-window { overflow: auto; height: 300px; width: 660px; font-family: "Lucida Console", Monaco, monospace; font-size: 13px; line-height: 15px; }
+    .cmd-wrap { height: 30px; width: 100%; margin-top: 10px; }
+    .cmd-wrap form { margin: 0; }
+    .cmd-label { display: inline-block; vertical-align: middle; margin: 0; font-family: "Lucida Console", Monaco, monospace; }
+    .lt-ie8 .cmd-label { display: inline; zoom: 1; }
+    #commandPrompt { width: 590px; border: 0; margin: 0; background: none; color: white; font-family: "Lucida Console", Monaco, monospace; font-size: 13px; line-height: 15px; }
+
+    /* CSS3 */
+    #commandPrompt {
+    -webkit-border-radius: 0;
+            border-radius: 0; 
+    }

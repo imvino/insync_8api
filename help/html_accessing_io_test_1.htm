@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<!-- saved from url=(0029)http://www.helpandmanual.com/ -->
+<head>
+   <title>Use IO Test</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<!-- Redirect browser to frame page if page is not in the content frame. -->
+<script type="text/javascript">
+<!--
+if (location.search.lastIndexOf("toc=0")<=0) {
+  if (parent.frames.length==0) { parent.location.href="index.html?html_accessing_io_test_1.htm"; }
+  else { parent.quicksync('a14.4'); }
+}
+//-->
+</script>
+<script type="text/javascript" src="highlight.js"></script></head>
+<body style="margin: 0px 0px 0px 0px; background: #FFFFFF;" onload="highlight();">
+<div id="hmpopupDiv" style="visibility:hidden; position:absolute; z-index:1000; "></div>
+
+
+
+<!-- Placeholder for topic body. -->
+<table width="100%" border="0" cellspacing="0" cellpadding="5"><tr valign="top"><td align="left">
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="100%" cellspacing="0" cellpadding="8" bgcolor="#5e9732" border="0" style="background-color: #5e9732; border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="middle"><p style="margin: 19px 0px 10px 0px;"><span style="font-size: 24pt; font-family: 'Segoe UI'; font-weight: bold; color: #ffffff;">Use IO Test</span></p>
+</td>
+<td valign="middle"><p style="text-align: right;"><a href="html_introduction.htm"><img src="btn_home_h.png" width="22" height="36" border="0" alt="btn_home_h" style="margin:0 0 0 auto;margin:0px;"></a><span style="font-size: 16pt; font-family: 'Segoe UI';">  </span><a href="html_confirm_insync_operations_1.htm"><img src="btn_prev_h.png" width="36" height="36" border="0" alt="btn_prev_h" style="margin:0 0 0 auto;margin:0px;"></a><span style="font-size: 16pt; font-family: 'Segoe UI';">  </span><a href="html_define_inputs_and_outputs_1.htm"><img src="btn_next_h.png" width="36" height="36" border="0" alt="btn_next_h" style="margin:0 0 0 auto;margin:0px;"></a><span style="font-size: 16pt; font-family: 'Segoe UI';"> </span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table width="100%" cellspacing="0" cellpadding="8" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top"><p style="margin: 19px 0px 0px 0px;"><span style="font-size: 18pt; font-family: 'Segoe UI';">The IO-Board Tester can be used to confirm hardware connections, map inputs from the detectors to outputs to the controller, and/or diagnose problems. To start it, click the </span><span style="font-size: 18pt; font-family: 'Segoe UI'; font-weight: bold;">IO Test</span><span style="font-size: 18pt; font-family: 'Segoe UI';"> button on the Advanced menu. The IO-Board Test program window appears.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="26" style="width:26px;"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">1.</span></p>
+</td>
+<td valign="top"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">The Intersection View represents how InSync perceives the intersection based on how the raw inputs/outputs are mapped to/from the IO board. To ensure that the intersection view is accurate, double-check the mapping configuration. If all detectors, phases, and lanes have already been defined, you can use the InSync Mapping button to test the hardware. Otherwise, use the Tester Mapping button to load the default mapping. Any changes made within InSync Mapping are saved. Changes made within the Tester Mapping are not saved.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="26" style="width:26px;"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">2.</span></p>
+</td>
+<td valign="top"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">Verify that there are green returns for each phase in the Inputs section.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="26" style="width:26px;"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">3.</span></p>
+</td>
+<td valign="top"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">Selecting one of the phases in the Outputs section should place a call to that phase. For detector cards, the LED on the detector card will immediately light up and you will see a call placed for that phase on the signal controller. Test all phases systematically to ensure that communications between the InSync Processor and the controller are configured correctly.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="79" style="width:79px;"><p><span style="font-size: 18pt; font-family: 'Segoe UI'; font-weight: bold;">TIP:</span></p>
+</td>
+<td valign="top"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">You can view which pins are associated with an output call by hovering your mouse over the output. The pin assignment is then displayed in the tooltips.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="94" style="width:94px;"><p><span style="font-size: 18pt; font-family: 'Segoe UI'; font-weight: bold;">Note:</span></p>
+</td>
+<td valign="top"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">If you did not set up the detections within the InSync Web UI, you can still test whether InSync is receiving inputs from the intersection by clicking the </span><span style="font-size: 18pt; font-family: 'Segoe UI'; font-weight: bold;">Tester Mapping</span><span style="font-size: 18pt; font-family: 'Segoe UI';"> button. These inputs will reflect a default configuration for the cabinet interface.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table cellspacing="0" cellpadding="0" border="0" style="border: none; border-spacing:0px;">
+<tr style="text-align:left;vertical-align:top;">
+<td valign="top" width="26" style="width:26px;"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">4.</span></p>
+</td>
+<td valign="top"><p><span style="font-size: 18pt; font-family: 'Segoe UI';">Click the </span><span style="font-size: 18pt; font-family: 'Segoe UI'; font-weight: bold;">X</span><span style="font-size: 18pt; font-family: 'Segoe UI';"> icon (top right corner) when finished to exit and restart InSync.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

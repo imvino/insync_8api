@@ -1,0 +1,65 @@
+/*	==========================================================================
+	Camera Views
+	==========================================================================  */
+	.camera-container { width: 320px; margin: auto; padding: 0 0 1em 0; }
+
+    /* Multi View */
+    .view-controls { position: relative; z-index: 40; }
+    .view-controls-right { float: right; }
+    .view-controls-right button { z-index: 90; }
+    .manual-ctrls { position: absolute; top: -22px; right: 15px; }
+    .manual-ctrls-btn { padding: 5px 29px 5px; }
+    .lt-ie8 #manual 	{ padding: 0px 25px 0px 25px; }
+    .lt-ie8  #manual span  { padding: 0px 40px 0px 39px; }
+
+    #layouts, #refresh, #filter { width: 200px; }
+
+    .manual-controls { background: none; }
+    .manual-controls thead th, .manual-controls tbody td { vertical-align: middle; padding: 2px; background: none; text-align: center; }
+    .manual-controls tbody td { border: 0 none; }
+    .manual-controls tbody .btn { padding: 6px 16px; margin: 2px; }
+
+    #camera_scrollbox { position: relative; overflow-x: auto; clear: both; }
+    #view_container { position: relative; display: inline-block; padding: 0; margin: 0; }
+    .lt-ie8 #view_container { display: inline; zoom: 1; }
+
+	#original_items, #cloned_items { margin: 0; list-style: none; clear: both; }
+    #original_items li, #cloned_items li { padding: 0; margin: 0; line-height: 0; cursor: move; }
+    #original_items li img, #cloned_items li img { padding: 3px; display: inline-block; }
+
+    #original_items li { display: inline-block; width: auto; }
+    .lt-ie8	#original_items li { display: inline; zoom: 1; }
+    #cloned_items li { position: absolute; }
+
+    .layout-control { text-align: center; }
+
+    .columns.vertical-center { vertical-align: middle; }
+    .nowrap { white-space: nowrap; }
+    
+    /* Recording Schedule */
+    .delete-recording { cursor: pointer; }
+    .delete-recording span { margin: 0; color: #535356; font-family: "open-sans", sans-serif; font-size: 22px; font-weight: 700; line-height: 22px; opacity: 0.8; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); }
+    .delete-recording span:hover { opacity: 0.6; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; filter: alpha(opacity=60); }
+
+    .add-recording-dialog .days-of-week-options { background: none; margin: 0; }
+    .add-recording-dialog .days-of-week-options td { vertical-align: middle; white-space: nowrap; padding: 10px 2px 0; border-top: 0 none; background: none; }
+    .add-recording-dialog .days-of-week-options label { margin: 0; font-size: 13px; text-transform: uppercase; cursor: default; }
+    .add-recording-dialog .days-of-week-options .prettycheckbox, .add-recording-dialog .days-of-week-options .prettyradio { display: inline-block; padding: 0; margin: 0; }
+    .lt-ie8 .add-recording-dialog .days-of-week-options .prettycheckbox, .lt-ie8 .add-recording-dialog .days-of-week-options .prettyradio { float: left; }
+
+    #estimated-storage { margin: 25px 0 0 0; }
+    #estimated-storage p { margin: 0; }
+
+    #storageReq { font-weight: 600; }
+
+	/* CSS3 */
+
+    /*  ==========================================================================
+    Media Queries
+    ==========================================================================  */
+    
+    @media only screen and (max-width: 1200px) {
+
+    }
+
+   

@@ -1,0 +1,15 @@
+/*	==========================================================================
+	History Viewer
+	==========================================================================  */
+	.history-table { width: 100%; background: #fff; }
+	.history-table tbody td { vertical-align: middle; text-align: center; }
+
+    .history-table th { text-align: center; vertical-align: middle; }
+	.history-table td, .history-table th { padding: 3px 0; box-sizing: border-box; border: 1px solid #ddd; background: #fff; }
+	.history-table .h-movement img { height: 50px; width: 50px; margin: 0 auto; }
+
+	.history-period-change { background-color: khaki !important; } 
+	.history-success, .history-row-tunnel, .history-tunnel { background-color: greenyellow !important; } 
+	.history-error { background-color: lightcoral !important; } 
+    .history-hilite { background-color: yellow !important; } 
+

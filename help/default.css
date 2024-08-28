@@ -1,0 +1,181 @@
+/* Text Styles */
+hr { color: #000000}
+body, table, tr, th /* Normal */
+{
+ font-size: 11pt;
+ font-family: 'Segoe UI';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_Body /* Body */
+{
+}
+span.f_Bulleted /* Bulleted */
+{
+}
+span.f_BulletIndent /* BulletIndent */
+{
+}
+span.f_Button /* Button */
+{
+ font-weight: bold;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New';
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_DefaultParagraphFont /* Default Paragraph Font */
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman';
+}
+span.f_Emphasis /* Emphasis */
+{
+ font-size: 12pt;
+ font-family: 'Avenir LT Std 45 Book';
+ font-style: italic;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 22pt;
+ font-weight: bold;
+ color: #ffffff;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 16pt;
+ font-weight: bold;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 14pt;
+ font-family: 'Avenir LT Std 65 Medium';
+ font-weight: bold;
+ color: #333333;
+}
+span.f_HeadingRunIn /* HeadingRunIn */
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman';
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_Indented /* Indented */
+{
+ font-family: 'Avenir LT Std 45 Book';
+}
+span.f_InputText /* InputText */
+{
+ font-size: 12pt;
+ font-family: 'Courier New';
+}
+span.f_Keyboard /* Keyboard */
+{
+ font-family: 'Avenir LT Std 35 Light';
+}
+span.f_Note /* Note */
+{
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_Numbered /* Numbered */
+{
+}
+span.f_WARNING /* WARNING */
+{
+ font-size: 12pt;
+ font-family: 'Avenir LT Std 65 Medium';
+ font-weight: bold;
+ color: #f06e00;
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.p_Body /* Body */
+{
+ margin: 19px 0px 0px 0px;
+}
+.p_Bulleted /* Bulleted */
+{
+ margin: 15px 0px 7px 24px;
+}
+.p_BulletIndent /* BulletIndent */
+{
+ text-align: justify;
+ text-indent: -24px;
+ margin: 5px 0px 5px 72px;
+}
+.p_Button /* Button */
+{
+}
+.p_CodeExample /* Code Example */
+{
+ white-space: nowrap;
+}
+.p_Comment /* Comment */
+{
+}
+.p_DefaultParagraphFont /* Default Paragraph Font */
+{
+}
+.p_Emphasis /* Emphasis */
+{
+}
+.p_Heading1 /* Heading1 */
+{
+}
+.p_Heading2 /* Heading2 */
+{
+ margin: 35px 0px 7px 0px;
+}
+.p_Heading3 /* Heading3 */
+{
+ margin: 28px 0px 5px 0px;
+}
+.p_HeadingRunIn /* HeadingRunIn */
+{
+}
+.p_ImageCaption /* Image Caption */
+{
+}
+.p_Indented /* Indented */
+{
+ margin: 17px 0px 0px 24px;
+}
+.p_InputText /* InputText */
+{
+}
+.p_Keyboard /* Keyboard */
+{
+}
+.p_Note /* Note */
+{
+ text-indent: -48px;
+ margin: 17px 0px 0px 48px;
+}
+.p_Notes /* Notes */
+{
+}
+.p_Numbered /* Numbered */
+{
+ text-indent: -48px;
+ margin: 0px 0px 8px 58px;
+}
+.p_WARNING /* WARNING */
+{
+}

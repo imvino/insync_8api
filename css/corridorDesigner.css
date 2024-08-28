@@ -1,0 +1,155 @@
+/*  ==========================================================================
+    Corridor Designer
+    ==========================================================================  */
+    .corridor-title { width: 275px; }
+
+    .designer-wrapper { margin-top: 25px; }
+
+    .toolbar { position: relative; z-index: 50; padding: 10px; background: #232323; }
+    .toolbar-btns { margin: 0; list-style: none; }
+    .toolbar-btns > li { position: relative; display: inline-block; margin: 0 0 0 8px; }
+    .lt-ie8 .toolbar-btns > li { display: inline; zoom: 1; }
+    .toolbar-btns li.first { margin: 0; z-index: 40; }
+    .toolbar-btns li.clear { float: right; }
+    .toolbar-btns li.clear .btn { padding: 8px 13px; margin: 0; }
+    .toolbar-btns li.clear .btn-outline { border-color: #777; color: #777; font-weight: 600; }
+    .toolbar-btns li.clear .btn-outline:hover, .toolbar-btns li.clear .btn-outline:focus { background: #777; color: #232323; }
+    .toolbar-btns .btn { padding: 11px 13px 10px; margin: 0; }
+    .toolbar-btns .btn:active, .toolbar-btns .btn.active { top: 0; }
+    .toolbar-btns .arrow { display: inline-block; height: 8px; width: 14px; margin-left: 10px; background: url("../img/chosen/chosen-sprite.png") no-repeat; }
+    .lt-ie8 .toolbar-btns .arrow { display: inline; zoom: 1; vertical-align: 4px; }
+
+    .icon { display: inline-block; vertical-align: middle; height: 18px; width: 18px; margin-right: 10px; }
+    .lt-ie8 .icon { display: inline; zoom: 1; }
+    .btn-add .icon { background-position: -20px -450px; }
+    .btn-save .icon { background-position: 0 -450px; }
+    .btn-rotate .icon { background-position: 0 -530px; }
+    .btn-download .icon { background-position: 0 -350px; }
+    .btn-file .icon { background-position: 0 -469px; }
+
+    .toolbar-submenu { position: absolute; display: none; background: #232323; z-index: 60; }
+    .toolbar-submenu.active { display: block; }
+    .toolbar-submenu ul { padding: 0; margin: 0; list-style: none; z-index: 60; }
+    .toolbar-submenu li { border-top: 1px solid #373737; }
+    .toolbar-submenu li:hover { background: #373737; }
+    .toolbar-submenu li:first-child { border-top: 0 none; }
+    .toolbar-submenu li a { display: block; padding: 10px 35px 10px 15px; color: #fff; font-weight: 600; text-transform: uppercase; }
+    .toolbar-submenu li a:hover { color: #7c9e4c; }
+
+    .corridor-designer { padding: 15px; border-color: #232323; border-style: solid; border-width: 0 1px 1px 1px; margin: 0; }
+    .corridor-col, .corridor-intersection { float: left; margin: 0 0 0 12px; background: #fff; }
+    .corridor-col:first-child, .corridor-intersection:first-child { margin: 0; }
+
+    .control-header { position: relative; z-index: 49; width: 160px; padding: 8px 0 0 0; border: 1px solid #232323; background: #232323; text-align: center; cursor: pointer; }
+    .control-header .controls { margin: 0 0 8px 0; list-style: none; }
+    .control-header .controls li { display: inline-block; vertical-align: top; margin: 0 6px; }
+    .control-header .controls a { display: block; height: 19px; width: 19px; }
+    .lt-ie8 .control-header .controls li { display: inline; zoom: 1; }
+    .control-header .controls .icon { height: 19px; width: 19px; margin: 0; }
+    .control-header .ctrls-camera .icon { background-position: 0 -510px; }
+    .control-header .ctrls-gap .icon { background-position: -20px -510px; }
+    .control-header .ctrls-delete { color: #fff; font-size: 32px; font-weight: 700; line-height: 17px; }
+    .lt-ie8 .control-header .ctrls-delete { margin-top: -10px; line-height: 32px; }
+    .control-header input { width: 160px; margin: 0 0 6px 0; text-overflow: ellipsis; }
+
+    .rotated-sort { float:left; margin-right: 5px !important; }
+    .camera-container { padding: 0; margin: 0; list-style: none; }
+    .camera-container li { position: relative; height: 120px; width: 160px; margin: 25px 0; }
+    .camera-container li .thumbnail-text { position: absolute; top: -18px; right: -1px; left: -1px; padding: 2px 0 2px 4px; background: #222; color: #fff; font-size: 12px; line-height: 14px; cursor: pointer; }
+    .camera-container li .thumbnail-delete { position: absolute; right: 5px; color: #fff; font-size: 23px; cursor: pointer; }
+    .camera-container .camera { border: 1px solid #232323; background-image: url("../img/no-camera-160.png"); background-size: 100%; } 
+    .camera-container .gap { border: 1px dotted #232323; background: #fff; }
+
+    /* Auto-Complete */
+    .ui-menu { padding: 0; border: 0 none; margin: 0; background: #fff; } 
+    .ui-menu .ui-menu-item a { padding: 9px 6px 8px; color: #535356; line-height: 20px; cursor: pointer; }
+    .ui-menu .ui-menu-item a.ui-state-focus, .ui-menu .ui-menu-item a.ui-state-active { margin: 0; }
+    .ui-menu .ui-menu-item a.ui-state-focus { background: #7c9e4c; color: #fff; }
+
+
+    .ui-dialog .controls-row .single-select { margin-left: 0; }
+    .ui-dialog .control-label.medium { width: 105px; }
+    .ui-dialog .controls.medium { margin-left: 125px; }
+
+    /* CSS3 */
+    .toolbar .toolbar-submenu, .corridor-col, .corridor-intersection, .control-header {
+    -webkit-border-radius: 3px;
+            border-radius: 3px; 
+    }
+    .toolbar, .toolbar-submenu li:first-child, .toolbar-submenu li:first-child:hover, .camera-container li .thumbnail-text {
+    -webkit-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0; 
+    }
+    .corridor-designer, .camera-container .camera, .ui-menu {
+    -webkit-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px; 
+    }
+    .toolbar-submenu li a {
+    -webkit-transition: all linear 0.3s;
+       -moz-transition: all linear 0.3s;
+         -o-transition: all linear 0.3s;
+            transition: all linear 0.3s;
+    }
+
+/*  ==========================================================================
+    Media Queries
+    ==========================================================================  */
+
+    /* Mobile (Portrait & Landscape) ----------- */
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    }
+
+    /* Tablet (Portrait & Landscape) ----------- */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+
+    @media only screen and (min-width: 0px) {
+        .toolbar-submenu { font-size: 10px; }
+        .toolbar-btns .btn { padding: 5px 1px 4px; font-size: 10px; }
+        .lt-ie8 .toolbar-btns li.first .btn { padding: 6px 1px 5px; }
+        .toolbar-btns li.clear .btn { padding: 3px 2px 2px; font-size: 10px; }
+        .toolbar-btns .btn .icon { margin: 0 1px 0 0; }
+        .toolbar-btns li.clear .btn .icon { margin: 0 1px 0 0; }
+        .toolbar-btns > li { margin: 0 0 0px 2px; }
+        .portal-header .btn { padding: 5px 1px 4px; font-size: 10px; }
+        .portal-header .btn .icon { margin: 0 1px 0 0; }
+        .portal-header input { margin: 0 3px 0 0; }
+        .labelled-input { white-space: normal; }
+	input[type="text"], input[type="password"], textarea { padding: 3px 2px 3px; }
+        .portal-header .right { float: none; }
+    }
+
+    @media only screen and (min-width: 720px) {
+        .portal-header .right { float: right; }
+    }
+
+    @media only screen and (min-width: 1120px) {
+        .toolbar-submenu { font-size: 11px; }
+        .toolbar-btns .btn { padding: 8px 4px 7px; font-size: 11px; }
+        .lt-ie8 .toolbar-btns li.first .btn { padding: 9px 4px 9px; }
+        .toolbar-btns li.clear .btn { padding: 5px 4px 4px; font-size: 11px; }
+        .toolbar-btns .btn .icon { margin: 0 3px 0 0; }
+        .toolbar-btns li.clear .btn .icon { margin: 0 3px 0 0; }
+        .toolbar-btns > li { margin: 0 0 0px 6px; }
+        .portal-header .btn { padding: 8px 4px 7px; font-size: 11px; }
+        .portal-header .btn .icon { margin: 0 3px 0 0; }
+        .portal-header input { margin: 0 6px 0 0; }
+        .labelled-input { white-space: nowrap; }
+	input[type="text"], input[type="password"], textarea { padding: 6px 5px 6px; }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        .toolbar-submenu { font-size: 12px; }
+        .toolbar-btns .btn { padding: 9px 5px 8px; font-size: 12px; }
+        .lt-ie8 .toolbar-btns li.first .btn { padding: 11px 5px 10px; }
+        .toolbar-btns li.clear .btn { padding: 7px 5px 6px; font-size: 12px; }
+        .toolbar-btns .btn .icon { margin: 0 5px 0 0; }
+        .toolbar-btns li.clear .btn .icon { margin: 0 5px 0 0; }
+        .toolbar-btns > li { margin: 0 0 0px 7px; }
+        .portal-header .btn { padding: 9px 5px 8px; font-size: 12px; }
+        .portal-header .btn .icon { margin: 0 5px 0 0; }
+        .portal-header input { margin: 0 8px 0 0; }
+        .labelled-input { white-space: nowrap; }
+	input[type="text"], input[type="password"], textarea { padding: 7px 6px 7px; }
+    }

@@ -1,0 +1,10 @@
+/*  ==========================================================================
+    Reporting
+    ==========================================================================  */
+    .chart-area { margin-bottom: 70px; width: 100%; height: 400px; }
+    .legendColorBox div { border: 0 none; }
+    .legend table tr { border-top: 0 none; }
+
+    #playbackSlider .ui-slider .ui-slider-handle { background-position: 0 0; }
+
+    /* CSS3 */

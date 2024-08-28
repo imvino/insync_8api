@@ -1,0 +1,9 @@
+/* 
+    Created on : Jul 8, 2014, 2:00:07 PM
+    Author     : Kevin.Bond
+*/
+.net-error td:last-child { color: red; }
+.net-ok td:last-child { color: green; }
+.net-online td:last-child { color: #85a856; }
+.net-offline-soft td:last-child { color: #f69321; }
+

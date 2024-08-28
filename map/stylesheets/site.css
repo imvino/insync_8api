@@ -1,0 +1,115 @@
+div.mapCanvas {
+	float: clear;
+}
+
+div.cameraset {
+	white-space: nowrap;
+	text-align: left;
+}
+
+div.camera {
+	display: inline-block;
+	background: #ffffff url(../images/loading.gif) no-repeat scroll center;
+	margin: 2px;
+}
+
+/* IE 6 and 7 hacks */
+div.cameraset {
+	*display:inline;
+}
+div.camera {
+	*display: inline;
+}
+/* end hacks */
+
+div.thumb {
+	height: 99px;
+	width: 132px;
+}
+
+.thumb img {
+	vertical-align: bottom;
+	border: none;
+}
+
+/* Styling for lightbox*/
+#hoverbox {
+	position: absolute;
+	z-index: 999;
+	background: #ffffff url(../images/loading.gif) no-repeat scroll center;
+	width: 320px;
+	height: 240px;
+}
+
+#hoverbox img {
+	text-align: center;
+	border: 5px solid #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin: 0px 0px 0px 0px;
+	vertical-align: bottom;
+}
+
+.mapButton {
+	direction: ltr;
+	overflow: hidden;
+	text-align: left;
+	position: relative;
+	font-family: Arial, sans-serif;
+	-webkit-user-select: none;
+	font-size: 13px;
+	padding: 1px 6px;
+	border: 1px solid rgb(113, 123, 135);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px;
+	box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)
+		), to(rgb(230, 230, 230) ) );
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	white-space: nowrap;
+}
+
+.mapButtonOuter {
+	margin: 5px;
+	position: absolute;
+	cursor: pointer;
+	text-align: left;
+	right: 0px;
+	top: 0px;
+	z-index: 0;
+	background: #ffffff;
+}
+
+.UIControlPanel {
+        margin: 2px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px;
+	box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px;
+        padding: 3px;
+        border: 1px solid #c0c0c0;
+}
+
+.UIControlSelected {
+    font-weight: bold;
+}
+
+.UIControlOption:hover {
+    background: #e0e0e0;
+}
+
+hr {
+    margin: 0px;
+    width: auto;
+}
+
+.intersection_label {
+    font-family: Ariel, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+}
+
+.intersection_label a {
+    color: inherit;
+}
