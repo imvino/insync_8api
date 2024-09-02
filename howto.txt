@@ -19,3 +19,6 @@ WARNING: Recording video takes up a lot of disk space, and no checks are made to
 //recording.php
 
 http://localhost/helpers/recordingHelper_v2.php?action=getdrivelist
+
+// phaseHelper_v2.php
+ $username = $permissions['username'] ?? 'PEC'; //default_user for testing
