@@ -241,7 +241,7 @@ function setDefaultPhaseNames()
     }
 
     pg_query($db, "BEGIN TRANSACTION");
-    $username = $permissions['username'];
+    $username = $permissions['username'] ?? 'PEC';
 
     if (pg_query_params($db, 'delete from phase_renaming where "user" = $1', [$username])) {
         foreach ($phaseArr as $index => $names) {
@@ -276,7 +276,7 @@ function getPhaseNames()
         return false;
     }
 
-    $username = $permissions['username'];
+    $username = $permissions['username'] ?? 'PEC';
 
     $found_mappings = false;
     $returnArray = [];

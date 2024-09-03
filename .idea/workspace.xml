@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6674399-3f02-4d16-847c-e64408967f46" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/helpers/phaseHelper_v2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/statisticsHelper_v2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/FileIOHelper_v2.php" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/FileIOHelper_v2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/howto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/howto.txt" afterDir="false" />
-    </list>
+    <list default="true" id="d6674399-3f02-4d16-847c-e64408967f46" name="Changes" comment="report" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +57,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="report" />
+    <option name="LAST_COMMIT_MESSAGE" value="report" />
   </component>
 </project>
