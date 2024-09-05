@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6674399-3f02-4d16-847c-e64408967f46" name="Changes" comment="report" />
+    <list default="true" id="d6674399-3f02-4d16-847c-e64408967f46" name="Changes" comment="?? 'PEC'">
+      <change beforePath="$PROJECT_DIR$/howto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/howto.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +60,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="report" />
-    <option name="LAST_COMMIT_MESSAGE" value="report" />
+    <MESSAGE value="?? 'PEC'" />
+    <option name="LAST_COMMIT_MESSAGE" value="?? 'PEC'" />
   </component>
 </project>
